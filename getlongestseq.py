@@ -18,7 +18,6 @@ def findlongest(f):
     for line in f.readlines():
         if line[0] == ">":
             oldseqname, newseqname = newseqname, line[1:].rstrip()
-
             if currentseqlength > longestlength:
                 longestlength = currentseqlength
                 longestseqname = oldseqname
