@@ -1,7 +1,7 @@
 from sys import argv, exit
 
 def main():
-    infile = open(argv[1]) if len(argv) >= 2 else exit("Must use at least 2 arguments")
+    infile = open(argv[1]) if len(argv) >= 2 else exit("Usage: getlongestseq.py [FASTA file]")
     print "%s" % findlongest(infile)
 
 
